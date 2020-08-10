@@ -10,3 +10,7 @@ if (temp > 20) {
 } else {
   console.log('Please use a number!')
 }
+
+const authenticated = true;
+
+authenticated ? console.log('yes') : console.log('no') // Ternary test!
