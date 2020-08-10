@@ -34,6 +34,6 @@ let samurai = {
 }
 
 console.log(user.firstName); // Accessing the object info directly.
-console.log(samurai.attackNow())// ARRAY notation!!! Custom indexes! :D
-console.log(samurai.pickUpWeapon('Kunai'))
-console.log(samurai.reflectOnSelf())
+console.log(samurai.attackNow());// ARRAY notation!!! Custom indexes! :D
+samurai.pickUpWeapon('Kunai');
+console.log(samurai.reflectOnSelf());
