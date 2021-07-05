@@ -10,6 +10,13 @@ let hasBonusLife = true;
 
 adjustHealthBars(chosenMaxLife);
 
+function reset() {
+  playerHealthBar.value = chosenMaxLife;
+  monsterHealthBar.value = chosenMaxLife;
+  resetGame(chosenMaxLife);
+}
+
+
 function endRound() {
   const initialPlayerHealth = currentPlayerHealth;
   const monsterDamage = dealPlayerDamage(MONSTER_ATTACK_VALUE);
@@ -27,6 +34,10 @@ function endRound() {
     alert('The monster has defeated you!')
   } else if (currentMonsterHealth <= 0 && currentMonsterHealth <= 0) {
     alert('You have both died in an epic fight')
+  }
+
+  if (currentPlayerHealth <= 0 || currentMonsterHealth <= 0) {
+    reset();
   }
 }
 
